@@ -278,25 +278,25 @@ classdef mp_km < handle
             if show_splash==1
                 
                 disp(' ');
-                disp(' *****************************************************************')
-                disp(' *                                                               *')
-                disp(' *      ----|   | N | e | u | r | O | L | A | B |  )             *');
-                disp(' *                                                               *')
-                disp(' *               Neural Oscillation Toolbox v1.0                 *');
-                disp(' *                      Gihan Weerasinghe                        *');
-                disp(' *                                                               *');
-                disp(' *                  University of Oxford 2021                    *');
-                disp(' *                                                               *');
-                disp(' *                    FOR ACADEMIC USE ONLY                      *');
-                disp(' *                                                               *');
-                disp(' *                                                               *');
-                disp(' *                Please cite: xxxxxxx xxx xxxx                  *');
-                disp(' *        in any publications which make use of NeurOLAB         *');
-                disp(' *                                                               *');
-                disp(' *                                                               *');
-                disp(' *       For more information on licensing see license.txt       *');
-                disp(' *                                                               *');
-                disp(' *****************************************************************');
+                disp(' ***********************************************************************')
+                disp(' *                                                                     *')
+                disp(' *         ----|   | N | e | u | r | O | L | A | B |  )                *');
+                disp(' *                                                                     *')
+                disp(' *                  Neural Oscillation Toolbox v1.01                   *');
+                disp(' *                         Gihan Weerasinghe                           *');
+                disp(' *                                                                     *');
+                disp(' *                     University of Oxford 2021                       *');
+                disp(' *                                                                     *');
+                disp(' *                       FOR ACADEMIC USE ONLY                         *');
+                disp(' *                                                                     *');
+                disp(' *                                                                     *');
+                disp(' *    Please cite: PLOS Computational Biology 17.8 (2021): e1009281    *');
+                disp(' *           in any publications which make use of NeurOLAB            *');
+                disp(' *                                                                     *');
+                disp(' *                                                                     *');
+                disp(' *         For more information on licensing see license.txt           *');
+                disp(' *                                                                     *');
+                disp(' ***********************************************************************');
                 disp(' ');
                 
             end
