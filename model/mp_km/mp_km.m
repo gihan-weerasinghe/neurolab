@@ -70,13 +70,35 @@ classdef mp_km < handle
         
         function set_prc(obj,zA,zB)
             
-            obj.zA=zeros(obj.npop,2);
-            obj.zB=zeros(obj.npop,2);
+            [npop_A,nharmonics_A]=size(zA);
+            [npop_B,nharmonics_B]=size(zB);
             
-            for j=1:obj.npop
+            assert(nharmonics_A==nharmonics_B,'set_prc dimension mismatch.');
+            assert(npop_A==npop_B,'set_prc dimension mismatch.');
+            
+            npop=npop_A;
+            nharmonics=nharmonics_A;
+            
+            obj.zA=zeros(obj.npop,nharmonics);
+            obj.zB=zeros(obj.npop,nharmonics);
+            
+            
+            if npop==1
                 
-                obj.zA(j,:)=zA;
-                obj.zB(j,:)=zB;
+                for j=1:obj.npop
+                    
+                    obj.zA(j,:)=zA;
+                    obj.zB(j,:)=zB;
+                    
+                end
+                
+            else
+                
+                assert(npop==obj.npop,'set_prc dimension mismatch.');
+                
+                obj.zA=zA;
+                obj.zB=zB;
+                
                 
             end
             
@@ -282,7 +304,7 @@ classdef mp_km < handle
                 disp(' *                                                                     *')
                 disp(' *         ----|   | N | e | u | r | O | L | A | B |  )                *');
                 disp(' *                                                                     *')
-                disp(' *                  Neural Oscillation Toolbox v1.01                   *');
+                disp(' *                  Neural Oscillation Toolbox v1.02                   *');
                 disp(' *                         Gihan Weerasinghe                           *');
                 disp(' *                                                                     *');
                 disp(' *                     University of Oxford 2021                       *');
