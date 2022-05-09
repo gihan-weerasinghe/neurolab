@@ -5,7 +5,6 @@ hold on
 scatter3(Ppp(:,1),Ppp(:,2),Ppp(:,3),500,'red','o','LineWidth',2.5);
 hold off
 %legend('Electrode','Population')
-make_presentation_plot
 set(gcf, 'Position', GCF_POS);
 end
 

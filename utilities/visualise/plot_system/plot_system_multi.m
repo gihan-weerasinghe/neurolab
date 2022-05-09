@@ -7,7 +7,6 @@ scatter3(P_stim(:,1),P_stim(:,2),P_stim(:,3),600,'red','x','LineWidth',2);
 scatter3(Ppp(:,1),Ppp(:,2),Ppp(:,3),500,'o','LineWidth',2,'MarkerEdgeColor',[0.9290, 0.6940, 0.1250]);
 hold off
 legend('Recording electrode','Stimulating electrode','Population')
-make_presentation_plot
 set(gcf, 'Position', GCF_POS);
 
 

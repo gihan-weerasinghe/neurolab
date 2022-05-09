@@ -5,6 +5,5 @@ hold on
 scatter3(Pp(:,1),Pp(:,2),Pp(:,3),50,'red','o');
 hold off
 %legend('Electrode','Neuron')
-make_presentation_plot
 end
 

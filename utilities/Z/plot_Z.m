@@ -16,4 +16,3 @@ xticklabels({'0','\pi/2','\pi','3\pi/2','2\pi'})
 xlim([0,2*pi]);
 xlabel('$\theta$ (rad)','interpreter','latex')
 ylabel('$Z(\theta)$','interpreter','latex')
-make_presentation_plot
